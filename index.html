@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Exodus - Música</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .album-cover {
+            width: 300px; /* Tamanho da capa do álbum */
+            margin: 20px auto;
+        }
+
+        .music-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .music-list ul {
+            list-style-type: none;
+            padding: 0;
+            width: 80%;
+        }
+
+        .music-list li {
+            background-color: #fff;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .music-list li img {
+            width: 80px;
+            height: 80px;
+            margin-right: 20px;
+            border-radius: 5px;
+        }
+
+        .music-info {
+            flex-grow: 1;
+        }
+
+        .music-info span {
+            display: block;
+            font-weight: bold;
+        }
+
+        .music-info .artist {
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        .music-list li audio {
+            display: none; /* Oculta o player de áudio padrão */
+        }
+
+        .music-list li a {
+            margin-left: 20px;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            width: 100%;
+        }
+
+        .download-section {
+            text-align: center;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mark Exodus </h1>
+    </header>
+
+    <div class="download-section">
+        <h2>Baixa em primeira mão o Álbum de Mark Exodus – 7 Dias Solteiro 2 (Álbum)</h2>
+        <p>Baixe e escute agora o álbum "7 Dias Solteiro 2" de Mark Exodus! Faça o download em formato MP3 ou aproveite as faixas fresquinhas gratuitamente. Não perca essa oportunidade de vivenciar a música de forma única!</p>
+       
+    </div>
+
+    <div style="text-align: center;">
+        <img src="https://resources.tidal.com/images/6759f5a1/e2ad/4483/826b/b460bab85d5d/640x640.jpg" alt="Capa do Álbum" class="album-cover">
+    </div>
+    <h2 style="text-align:center;">Mark Exodus – 7 Dias Solteiro 2 (Álbum)</h2>
+ <p style="text-align:center;">Estilo Musical: R&B</p>
+    <section class="music-list">
+        <ul>
+            <li>
+                <img src="https://resources.tidal.com/images/6759f5a1/e2ad/4483/826b/b460bab85d5d/640x640.jpg" alt="Capa do Álbum">
+                <div class="music-info">
+                    <span>01 - Mark Exodus - Confusa</span>
+                </div>
+                <audio id="track1">
+                    <source src="Audios/1.Mark Exodus - Confusa.mp3" type="audio/mp3">
+                </audio>
+                <a href="#" onclick="playTrack('track1'); return false;">Escutar</a>
+               <a href="https://www.mediafire.com/file/gjnvppnttqyp42s/1.Mark+Exodus+-+Confusa.mp3/file" target="_blank">Baixar</a>
+            </li>
+           <li>
+    <img src="https://resources.tidal.com/images/6759f5a1/e2ad/4483/826b/b460bab85d5d/640x640.jpg" alt="Capa do Álbum">
+    <div class="music-info">
+        <span>02 - Mark Exodus - Mesma Canção</span>
+    </div>
+    <audio id="track2">
+        <source src="Audios/2.Mark Exodus - Mesma Cancao.mp3" type="audio/mp3">
+    </audio>
+    <a href="#" onclick="playTrack('track2'); return false;">Escutar</a>
+    <a href="https://www.mediafire.com/file/f79kj95ntceblak/2.Mark+Exodus+-+Mesma+Cancao.mp3/file" target="_blank">Baixar</a>
+</li>
+<li>
+    <img src="https://resources.tidal.com/images/6759f5a1/e2ad/4483/826b/b460bab85d5d/640x640.jpg" alt="Capa do Álbum">
+    <div class="music-info">
+        <span>03 - Mark Exodus - Queimada e Descontroladas</span>
+    </div>
+    <audio id="track3">
+        <source src="Audios/3.Mark Exod - Queimada e Descontroladas.mp3" type="audio/mp3">
+    </audio>
+    <a href="#" onclick="playTrack('track3'); return false;">Escutar</a>
+    <a href="https://www.mediafire.com/file/uz5coup64vpshj9/3.Mark+Exod+-+Queimada+e+Descontroladas.mp3/file" target="_blank">Baixar</a>
+</li>
+<li>
+    <img src="https://resources.tidal.com/images/6759f5a1/e2ad/4483/826b/b460bab85d5d/640x640.jpg" alt="Capa do Álbum">
+    <div class="music-info">
+        <span>04 - Mark Exodus - DopaMina</span>
+    </div>
+    <audio id="track4">
+        <source src="Audios/4.Mark Exodus - DopaMina.mp3" type="audio/mp3">
+    </audio>
+    <a href="#" onclick="playTrack('track4'); return false;">Escutar</a>
+    <a href="https://www.mediafire.com/file/y0tzdyqglnnapia/4.Mark+Exodus+-+DopaMina.mp3/file" target="_blank">Baixar</a>
+</li>
+<li>
+    <img src="https://resources.tidal.com/images/6759f5a1/e2ad/4483/826b/b460bab85d5d/640x640.jpg" alt="Capa do Álbum">
+    <div class="music-info">
+        <span>05 - Mark Exodus - Único</span>
+    </div>
+    <audio id="track5">
+        <source src="Audios/5.Mark Exodus - Unico.mp3" type="audio/mp3">
+    </audio>
+    <a href="#" onclick="playTrack('track5'); return false;">Escutar</a>
+    <a href="https://www.mediafire.com/file/3vstymcfjzkstmj/5.Mark+Exodus+-+Unico.mp3/file" target="_blank">Baixar</a>
+</li>
+<li>
+    <img src="https://resources.tidal.com/images/6759f5a1/e2ad/4483/826b/b460bab85d5d/640x640.jpg" alt="Capa do Álbum">
+    <div class="music-info">
+        <span>06 - Mark Exodus - Rosas</span>
+    </div>
+    <audio id="track6">
+        <source src="Audios/6.Mark Exodus - Rosas.mp3" type="audio/mp3">
+    </audio>
+    <a href="#" onclick="playTrack('track6'); return false;">Escutar</a>
+    <a href="https://www.mediafire.com/file/fh2h0eu1o0jyis7/6.Mark+Exodus+-+Rosas.mp3/file" target="_blank">Baixar</a>
+</li>
+<li>
+    <img src="https://resources.tidal.com/images/6759f5a1/e2ad/4483/826b/b460bab85d5d/640x640.jpg" alt="Capa do Álbum">
+    <div class="music-info">
+        <span>07 - Mark Exodus - Ninguém Faz</span>
+    </div>
+    <audio id="track7">
+        <source src="Audios/7.Mark Exodus - Ninguem Faz.mp3" type="audio/mp3">
+    </audio>
+    <a href="#" onclick="playTrack('track7'); return false;">Escutar</a>
+    <a href="https://www.mediafire.com/file/g5zia1hfdenlmlw/7.Mark+Exodus+-+Ninguem+Faz.mp3/file" target="_blank">Baixar</a>
+</li>
+<li>
+    <img src="https://resources.tidal.com/images/6759f5a1/e2ad/4483/826b/b460bab85d5d/640x640.jpg" alt="Capa do Álbum">
+    <div class="music-info">
+        <span>08 - Mark Exodus - O Que Tu Queres</span>
+    </div>
+    <audio id="track8">
+        <source src="Audios/8.Mark Exodus - O Que Tu Queres.mp3" type="audio/mp3">
+    </audio>
+    <a href="#" onclick="playTrack('track8'); return false;">Escutar</a>
+    <a href="https://www.mediafire.com/file/a2iz6q8kxq877tm/8.Mark+Exodus+-+O+Que+Tu+Queres.mp3/file" target="_blank">Baixar</a>
+</li>
+<li>
+    <img src="https://resources.tidal.com/images/6759f5a1/e2ad/4483/826b/b460bab85d5d/640x640.jpg" alt="Capa do Álbum">
+    <div class="music-info">
+        <span>09 - Mark Exodus - Legalize</span>
+    </div>
+    <audio id="track9">
+        <source src="Audios/9.Mark Exodus - Legalize.mp3" type="audio/mp3">
+    </audio>
+    <a href="#" onclick="playTrack('track9'); return false;">Escutar</a>
+    <a href="https://www.mediafire.com/file/py4k3xf15oexqu1/9.Mark+Exodus+-+Legalize.mp3/file" target="_blank">Baixar</a>
+</li>
+<li>
+    <img src="https://resources.tidal.com/images/6759f5a1/e2ad/4483/826b/b460bab85d5d/640x640.jpg" alt="Capa do Álbum">
+    <div class="music-info">
+        <span>10 - Mark Exodus - Exu</span>
+    </div>
+    <audio id="track10">
+        <source src="Audios/10.Mark Exodus - Exu.mp3" type="audio/mp3">
+    </audio>
+    <a href="#" onclick="playTrack('track10'); return false;">Escutar</a>
+    <a href="https://www.mediafire.com/file/z0trvp9mgmkpqtj/10.Mark+Exodus+-+Exu.mp3/file" target="_blank">Baixar</a>
+</li>
+<li>
+    <img src="https://resources.tidal.com/images/6759f5a1/e2ad/4483/826b/b460bab85d5d/640x640.jpg" alt="Capa do Álbum">
+    <div class="music-info">
+        <span>11 - Mark Exodus - Business</span>
+    </div>
+    <audio id="track11">
+        <source src="Audios/11.Mark Exodus - Business.mp3" type="audio/mp3">
+    </audio>
+    <a href="#" onclick="playTrack('track11'); return false;">Escutar</a>
+    <a href="https://www.mediafire.com/file/u513v94zn7kobxb/11.Mark+Exodus+-+Business.mp3/file" target="_blank">Baixar</a>
+</li>
+<li>
+    <img src="https://resources.tidal.com/images/6759f5a1/e2ad/4483/826b/b460bab85d5d/640x640.jpg" alt="Capa do Álbum">
+    <div class="music-info">
+        <span>12 - Mark Exodus - Errada</span>
+    </div>
+    <audio id="track12">
+        <source src="Audios/12.Mark Exodus - Errada.mp3" type="audio/mp3">
+    </audio>
+    <a href="#" onclick="playTrack('track12'); return false;">Escutar</a>
+    <a href="https://www.mediafire.com/file/p7mtf10edz4xi5q/12.Mark+Exodus+-+Errada.mp3/file" target="_blank">Baixar</a>
+</li>
+
+        </ul>
+    </section>
+<button class="info-button" onclick="toggleCreatorInfo()">Informações do Criador</button>
+<div class="creator-info" id="creator-info" style="display: none; position: absolute; top: 10px; right: 10px; background: white; border: 1px solid #ccc; padding: 10px; border-radius: 5px;">
+    <p style="font-family: 'Arial', sans-serif; font-size: 16px; color: #333;"><strong>Nome:</strong> Milato</p>
+    <p style="font-family: 'Arial', sans-serif; font-size: 16px; color: #333;"><strong>Contato:</strong> +258866154643 / +258857744085</p>
+    <img src="file:///home/hermes/Desktop/Meus%20Programas%20WEB/Meu%20Projecto%20Website%20Meu%20site/perfil.jpg" alt="Foto do Criador" style="width: 150px; height: auto;">
+</div>
+<div style="position: absolute; top: 10px; right: 10px;">
+    <button class="info-button" onclick="toggleCreatorInfo()">Informações do Criador</button>
+</div>
+
+<div class="creator-info" id="creator-info" style="display: none; position: absolute; top: 50px; right: 10px; background: white; border: 1px solid #ccc; padding: 10px; border-radius: 5px;">
+    <p style="font-family: 'Arial', sans-serif; font-size: 16px; color: #333;"><strong>Nome:</strong> Milato</p>
+    <p style="font-family: 'Arial', sans-serif; font-size: 16px; color: #333;"><strong>Contato:</strong> +258866154643 / +258857744085</p>
+    <img src="file:///home/hermes/Desktop/Meus%20Programas%20WEB/Meu%20Projecto%20Website%20Meu%20site/perfil.jpg" alt="Foto do Criador" style="width: 150px; height: auto;">
+</div>
+
+<footer>
+    <p style="font-family: 'Arial', sans-serif; font-size: 16px; color: ;white">&copy; 2024 Criado por Milato. Todos os direitos reservados.</p>
+</footer>
+
+<script>
+    function playTrack(trackId) {
+        var tracks = document.querySelectorAll('audio');
+        tracks.forEach(track => {
+            track.pause(); // Pausa todas as músicas
+            track.currentTime = 0; // Reinicia todas as músicas
+        });
+        var track = document.getElementById(trackId);
+        track.play(); // Toca a música selecionada
+    }
+
+    function toggleCreatorInfo() {
+        var info = document.getElementById('creator-info');
+        if (info.style.display === 'none' || info.style.display === '') {
+            info.style.display = 'block'; // Mostra as informações
+        } else {
+            info.style.display = 'none'; // Oculta as informações
+        }
+    }
+</script>
+
+</body>
+</html>
+
+                                                                                                                                                                                                                                                                                                      
+
+
